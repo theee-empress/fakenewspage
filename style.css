@@ -2,3 +2,11 @@ h1 {
   text-align:center;
   color:grey;
 }
+h4 {
+  text-align:center;
+  color:grey;
+}
+.welcome section {
+  border: 3px dotted dark grey;
+  
+  
