@@ -1,19 +1,372 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
- <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1> The Daily Scream </h1>
- <h2> Tech and Innovation | November 12, 2026 | By: Lundyn Duncan, Tech Correspondent </h2>
-<section class="echorage">
- <h3> New Smartphone App Solves Arguments By Agreeing with Whoever Is Angrier </h3>
- <h4> EchoRage: The AI Arguement Settler That Validates Your Fury</h4>
-</section>
- <p> The App That Proves You Are Right (As Long As You Shout)
- Tired of losing debate just because the other peson has "facts" or "logic"? EchoRage is the world's first conflict-resolution app that uses advanced decibal-based validation to decare the angreist user the absolute winner ofany agruement. No more compromise. No more seeing it from their side. Just pure, unadultered victory.  </p>
-<p> SILICON VALLEY, CA — For decades, couples, roommates, and coworkers have relied on outdated conflict-resolution methods like "active listening," "compromise," and "evidence." Today, a new Silicon Valley startup is disrupting the interpersonal communication space by asking a bold question: What if you’re just right because you’re louder?
-Enter EchoRage, the world’s first AI-powered argument settler designed to declare the angriest person in the room the undisputed winner of any debate.
-"People are exhausted by losing arguments just because the other person happens to have 'facts' or 'basic logic' on their side," said EchoRage founder and CEO Brad Sterling during a tense, red-faced press conference on Tuesday. "We realized that what consumers actually want isn't resolution. It's pure, unadulterated victory."
-</p>
-</body>
-</html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Smartphone App Solves Arguments by Agreeing With Whoever Is Angrier - The Daily Scream</title>
+    <style>
+        /* Reset & Base Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background-color: #f9f9f9;
+            color: #1a1a1a;
+            line-height: 1.65;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header & Masthead */
+        header {
+            background-color: #ffffff;
+            border-bottom: 3px solid #111;
+            padding: 15px 20px 0;
+        }
+
+        .top-bar {
+            max-width: 1140px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-size: 0.8rem;
+            color: #555;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .auth-buttons button {
+            background-color: #cc0000;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            font-weight: bold;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-left: 8px;
+            border-radius: 2px;
+        }
+
+        .auth-buttons button.login-btn {
+            background-color: #222;
+        }
+
+        .auth-buttons button:hover {
+            opacity: 0.85;
+        }
+
+        .masthead {
+            text-align: center;
+            padding: 25px 0;
+        }
+
+        .masthead h1 {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            font-size: 3.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #111;
+            line-height: 1;
+        }
+
+        .masthead p {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #cc0000;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+
+        /* Navigation Bar */
+        nav {
+            max-width: 1140px;
+            margin: 0 auto;
+            border-top: 1px solid #111;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            color: #cc0000;
+        }
+
+        /* Main Layout Grid */
+        .container {
+            max-width: 1140px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        /* Article Styling */
+        article {
+            background: #ffffff;
+            padding: 35px;
+            border: 1px solid #e2e2e2;
+        }
+
+        .category-tag {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: #cc0000;
+            font-weight: 800;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .article-title {
+            font-size: 2.4rem;
+            line-height: 1.15;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #111;
+        }
+
+        .article-subtitle {
+            font-size: 1.2rem;
+            color: #555;
+            font-style: italic;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .byline {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-size: 0.85rem;
+            color: #666;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            padding: 12px 0;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .share-buttons button {
+            background: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin-left: 5px;
+            border-radius: 3px;
+        }
+
+        .share-buttons button:hover {
+            background: #e2e2e2;
+        }
+
+        /* Mock Hero Image */
+        .hero-image-box {
+            background-color: #222;
+            color: #fff;
+            height: 320px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 8px;
+            border: 1px solid #111;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .fake-app-btn {
+            background-color: #ff1e1e;
+            color: white;
+            font-family: 'Impact', sans-serif;
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+            padding: 18px 28px;
+            border: 4px solid #fff;
+            border-radius: 50px;
+            box-shadow: 0 0 25px rgba(255, 30, 30, 0.8);
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: transform 0.15s ease;
+        }
+
+        .fake-app-btn:hover {
+            transform: scale(1.03);
+        }
+
+        .fake-app-btn:active {
+            transform: scale(0.98);
+        }
+
+        .image-caption {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-size: 0.8rem;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        /* Article Body */
+        .article-body p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .dateline {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-size: 0.95rem;
+        }
+
+        .article-body h2 {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-size: 1.45rem;
+            margin: 30px 0 15px;
+            color: #111;
+            border-left: 4px solid #cc0000;
+            padding-left: 12px;
+        }
+
+        .article-body ul {
+            margin: 0 0 25px 25px;
+            font-size: 1.05rem;
+        }
+
+        .article-body li {
+            margin-bottom: 12px;
+        }
+
+        .article-body li strong {
+            color: #111;
+        }
+
+        /* Comments Fake Button */
+        .comments-section {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #111;
+            text-align: center;
+        }
+
+        .comments-btn {
+            background-color: #111;
+            color: #fff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-weight: bold;
+            padding: 12px 24px;
+            border: none;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .comments-btn:hover {
+            background-color: #cc0000;
+        }
+
+        /* Sidebar Styling */
+        aside {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .sidebar-box {
+            background: #ffffff;
+            border: 1px solid #e2e2e2;
+            padding: 25px;
+        }
+
+        .sidebar-title {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-size: 1rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 3px solid #cc0000;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+
+        .trending-list {
+            list-style: none;
+            counter-reset: trending-counter;
+        }
+
+        .trending-list li {
+            counter-increment: trending-counter;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .trending-list li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .trending-list li::before {
+            content: counter(trending-counter);
+            font-family: 'Impact', sans-serif;
+            font-size: 1.6rem;
+            color: #cc0000;
+            line-height: 1;
+        }
+
+        .trending-list a {
+            font-weight: bold;
+            font-size: 1.05rem;
+            line-height: 1.35;
+            color: #111;
+        }
+
+        .trending-list a:hover {
+            color: #cc0000;
+            text-decoration: underline;
+        }
+
+        /* Fake Newsletter Box */
+        .newsletter-box {
+            background-color: #111;
+            color: #fff;
+        }
+
+        .newsletter-box .sidebar-title {
+            color: #fff;
+            border-bottom-color: #cc0000;
+        }
+
+        .newsletter-box p {
