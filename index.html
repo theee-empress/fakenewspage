@@ -4,369 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Smartphone App Solves Arguments by Agreeing With Whoever Is Angrier - The Daily Scream</title>
-    <style>
-        /* Reset & Base Styles */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        body {
-            font-family: 'Georgia', 'Times New Roman', serif;
-            background-color: #f9f9f9;
-            color: #1a1a1a;
-            line-height: 1.65;
-        }
+    <header>
+        <div class="top-bar">
+            <span>Thursday, November 12, 2026 | Loudest News On Earth</span>
+            <div class="auth-buttons">
+                <button type="button" class="login-btn" onclick="return false;">Log In</button>
+                <button type="button" onclick="return false;">Subscribe</button>
+            </div>
+        </div>
+        <div class="masthead">
+            <h1><a href="javascript:void(0)">THE DAILY SCREAM</a></h1>
+            <p>Volume Over Veracity Since 2026</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0)">Tech &amp; Innovation</a></li>
+                <li><a href="javascript:void(0)">Politics</a></li>
+                <li><a href="javascript:void(0)">Outrage</a></li>
+                <li><a href="javascript:void(0)">Business</a></li>
+                <li><a href="javascript:void(0)">Science</a></li>
+                <li><a href="javascript:void(0)">Lifestyle</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
+    <div class="container">
+        <main>
+            <article>
+                <div class="category-tag">TECH &amp; INNOVATION</div>
+                <h1 class="article-title">New Smartphone App Solves Arguments by Agreeing With Whoever Is Angrier</h1>
+                <p class="article-subtitle">Meet EchoRage, the revolutionary conflict-resolution platform that replaces "facts" and "logic" with pure, unadulterated decibel validation.</p>
 
-        /* Header & Masthead */
-        header {
-            background-color: #ffffff;
-            border-bottom: 3px solid #111;
-            padding: 15px 20px 0;
-        }
+                <div class="byline">
+                    <span><strong>By Tyler Vance</strong>, Tech Correspondent | November 12, 2026</span>
+                    <div class="share-buttons">
+                        <button type="button" onclick="return false;">Share</button>
+                        <button type="button" onclick="return false;">Post</button>
+                        <button type="button" onclick="return false;">Email</button>
+                    </div>
+                </div>
 
-        .top-bar {
-            max-width: 1140px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            font-size: 0.8rem;
-            color: #555;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #e0e0e0;
-        }
+                <div class="hero-image-box">
+                    <button type="button" class="fake-app-btn" onclick="return false;">I'M NOT EVEN MAD, YOU'RE MAD</button>
+                    <p class="interface-label">[EchoRage v1.0 User Interface Preview]</p>
+                </div>
+                <p class="image-caption">EchoRage’s flagship interface ignores logical fallacies and listens strictly for peak vocal cord strain. (Photo: EchoRage Press Kit)</p>
 
-        .auth-buttons button {
-            background-color: #cc0000;
-            color: white;
-            border: none;
-            padding: 6px 12px;
-            font-weight: bold;
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            cursor: pointer;
-            margin-left: 8px;
-            border-radius: 2px;
-        }
+                <div class="article-body">
+                    <p><span class="dateline">SILICON VALLEY, CA —</span> For decades, couples, roommates, and coworkers have relied on outdated conflict-resolution methods like "active listening," "compromise," and "evidence." Today, a new Silicon Valley startup is disrupting the interpersonal communication space by asking a bold question: What if you’re just right because you’re louder?</p>
 
-        .auth-buttons button.login-btn {
-            background-color: #222;
-        }
+                    <p>Enter EchoRage, the world’s first AI-powered argument settler designed to declare the angriest person in the room the undisputed winner of any debate.</p>
 
-        .auth-buttons button:hover {
-            opacity: 0.85;
-        }
+                    <p>"People are exhausted by losing arguments just because the other person happens to have 'facts' or 'basic logic' on their side," said EchoRage founder and CEO Brad Sterling during a tense, red-faced press conference on Tuesday. "We realized that what consumers actually want isn't resolution. It's pure, unadulterated victory."</p>
 
-        .masthead {
-            text-align: center;
-            padding: 25px 0;
-        }
+                    <h2>How It Works: Decibel-Based Truth™</h2>
 
-        .masthead h1 {
-            font-family: 'Impact', 'Arial Black', sans-serif;
-            font-size: 3.5rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: #111;
-            line-height: 1;
-        }
+                    <p>Unlike traditional mediation tools that attempt to find middle ground, EchoRage utilizes proprietary Decibel-Based Validation technology. When a disagreement breaks out, users simply place their phone on the table and tap the big red "I'M NOT EVEN MAD, YOU'RE MAD" button.</p>
 
-        .masthead p {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            color: #cc0000;
-            margin-top: 5px;
-            font-weight: bold;
-        }
+                    <p>From there, the app’s algorithm ignores all context, historical accuracy, and common sense, focusing entirely on three key metrics:</p>
 
-        /* Navigation Bar */
-        nav {
-            max-width: 1140px;
-            margin: 0 auto;
-            border-top: 1px solid #111;
-            padding: 10px 0;
-        }
+                    <ul>
+                        <li><strong>Peak Volume:</strong> Measured in decibels. Anything over 95 dB automatically triggers a "Fact-Check Override."</li>
+                        <li><strong>Vocal Strain:</strong> Advanced sensors detect neck-vein bulging and vocal cord fraying to calculate emotional commitment.</li>
+                        <li><strong>Interruptions Per Minute (IPM):</strong> The app rewards users who successfully talk over their opponent without taking a breath.</li>
+                    </ul>
 
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 25px;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            font-size: 0.85rem;
-            font-weight: 700;
-            text-transform: uppercase;
-        }
+                    <p>Once a threshold of fury is reached, EchoRage sounds an airhorn, flashes strobe lights, and announces the winner in a booming voice: <em>"CONGRATULATIONS! YOU ARE COMPLETELY RIGHT AND THEY ARE BEING HYSTERICAL!"</em></p>
 
-        nav a:hover {
-            color: #cc0000;
-        }
+                    <h2>Ending Compromise Forever</h2>
 
-        /* Main Layout Grid */
-        .container {
-            max-width: 1140px;
-            margin: 30px auto;
-            padding: 0 20px;
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 40px;
-        }
+                    <p>Early beta testers report a 100% increase in personal vindication, alongside a 400% spike in slammed doors and silent car rides.</p>
 
-        /* Article Styling */
-        article {
-            background: #ffffff;
-            padding: 35px;
-            border: 1px solid #e2e2e2;
-        }
+                    <p>"My husband tried to show me a bank statement to prove I spent too much on throw pillows," said beta tester Brenda Miller, 34. "Normally, that would be the end of it. Instead, I opened EchoRage, screamed 'YOU NEVER SUPPORT MY DREAMS' at 104 decibels, and the app immediately generated a legally non-binding certificate proving he owed me an apology. It’s a marriage saver."</p>
 
-        .category-tag {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            color: #cc0000;
-            font-weight: 800;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 10px;
-        }
+                    <h2>Pricing and Availability</h2>
 
-        .article-title {
-            font-size: 2.4rem;
-            line-height: 1.15;
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #111;
-        }
+                    <p>EchoRage is available now for iOS and Android. The free tier allows users to win up to three minor petty squabbles per month. For $19.99/month, users can upgrade to EchoRage Platinum, which unlocks unlimited screaming matches, automatic screenshot receipts of your opponent's "calm" demeanor to use against them later, and a "Bring Up Something From Three Years Ago" emergency boost button.</p>
+                </div>
 
-        .article-subtitle {
-            font-size: 1.2rem;
-            color: #555;
-            font-style: italic;
-            margin-bottom: 20px;
-            line-height: 1.4;
-        }
+                <div class="comments-section">
+                    <button type="button" class="comments-btn" onclick="return false;">View All 1,482 Heated Comments</button>
+                </div>
+            </article>
+        </main>
 
-        .byline {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            font-size: 0.85rem;
-            color: #666;
-            border-top: 1px solid #eee;
-            border-bottom: 1px solid #eee;
-            padding: 12px 0;
-            margin-bottom: 25px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
+        <aside>
+            <div class="sidebar-box">
+                <h3 class="sidebar-title">Trending in Tech</h3>
+                <ol class="trending-list">
+                    <li>
+                        <a href="javascript:void(0)">New Smart Fridge Locks Door and Plays Sad Trombone When You Reach for Shredded Cheese at 2 AM</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Study Finds 98% of "Quick 5-Minute Syncs" Could Have Been an Ignored Slack Message</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Startup Launches Subscription Service That Sends Someone to Sigh Heavily While You Parallel Park</a>
+                    </li>
+                </ol>
+            </div>
 
-        .share-buttons button {
-            background: #f0f0f0;
-            border: 1px solid #ccc;
-            padding: 5px 10px;
-            font-size: 0.75rem;
-            font-weight: bold;
-            cursor: pointer;
-            margin-left: 5px;
-            border-radius: 3px;
-        }
+            <div class="sidebar-box newsletter-box">
+                <h3 class="sidebar-title">The Daily Yell Newsletter</h3>
+                <p>Get the loudest, most unverified tech headlines delivered straight to your inbox every morning.</p>
+                <form onsubmit="return false;">
+                    <input type="email" placeholder="Enter your email address...">
+                    <button type="submit" onclick="return false;">Sign Me Up</button>
+                </form>
+            </div>
+        </aside>
+    </div>
 
-        .share-buttons button:hover {
-            background: #e2e2e2;
-        }
+    <footer>
+        <div class="footer-links">
+            <a href="javascript:void(0)">About Us</a>
+            <a href="javascript:void(0)">Corrections (We Make None)</a>
+            <a href="javascript:void(0)">Terms of Outrage</a>
+            <a href="javascript:void(0)">Privacy Policy</a>
+            <a href="javascript:void(0)">Contact</a>
+        </div>
+        <p>&copy; 2026 The Daily Scream Media Group. All rights reserved. Satire &amp; Parody.</p>
+    </footer>
 
-        /* Mock Hero Image */
-        .hero-image-box {
-            background-color: #222;
-            color: #fff;
-            height: 320px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-            margin-bottom: 8px;
-            border: 1px solid #111;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .fake-app-btn {
-            background-color: #ff1e1e;
-            color: white;
-            font-family: 'Impact', sans-serif;
-            font-size: 1.4rem;
-            letter-spacing: 1px;
-            padding: 18px 28px;
-            border: 4px solid #fff;
-            border-radius: 50px;
-            box-shadow: 0 0 25px rgba(255, 30, 30, 0.8);
-            cursor: pointer;
-            text-transform: uppercase;
-            transition: transform 0.15s ease;
-        }
-
-        .fake-app-btn:hover {
-            transform: scale(1.03);
-        }
-
-        .fake-app-btn:active {
-            transform: scale(0.98);
-        }
-
-        .image-caption {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            font-size: 0.8rem;
-            color: #666;
-            margin-bottom: 25px;
-        }
-
-        /* Article Body */
-        .article-body p {
-            margin-bottom: 20px;
-            font-size: 1.1rem;
-        }
-
-        .dateline {
-            font-weight: bold;
-            text-transform: uppercase;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            font-size: 0.95rem;
-        }
-
-        .article-body h2 {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            font-size: 1.45rem;
-            margin: 30px 0 15px;
-            color: #111;
-            border-left: 4px solid #cc0000;
-            padding-left: 12px;
-        }
-
-        .article-body ul {
-            margin: 0 0 25px 25px;
-            font-size: 1.05rem;
-        }
-
-        .article-body li {
-            margin-bottom: 12px;
-        }
-
-        .article-body li strong {
-            color: #111;
-        }
-
-        /* Comments Fake Button */
-        .comments-section {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 2px solid #111;
-            text-align: center;
-        }
-
-        .comments-btn {
-            background-color: #111;
-            color: #fff;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            font-weight: bold;
-            padding: 12px 24px;
-            border: none;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            cursor: pointer;
-            width: 100%;
-        }
-
-        .comments-btn:hover {
-            background-color: #cc0000;
-        }
-
-        /* Sidebar Styling */
-        aside {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
-
-        .sidebar-box {
-            background: #ffffff;
-            border: 1px solid #e2e2e2;
-            padding: 25px;
-        }
-
-        .sidebar-title {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            font-size: 1rem;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            border-bottom: 3px solid #cc0000;
-            padding-bottom: 8px;
-            margin-bottom: 20px;
-        }
-
-        .trending-list {
-            list-style: none;
-            counter-reset: trending-counter;
-        }
-
-        .trending-list li {
-            counter-increment: trending-counter;
-            margin-bottom: 20px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #eee;
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
-        }
-
-        .trending-list li:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-
-        .trending-list li::before {
-            content: counter(trending-counter);
-            font-family: 'Impact', sans-serif;
-            font-size: 1.6rem;
-            color: #cc0000;
-            line-height: 1;
-        }
-
-        .trending-list a {
-            font-weight: bold;
-            font-size: 1.05rem;
-            line-height: 1.35;
-            color: #111;
-        }
-
-        .trending-list a:hover {
-            color: #cc0000;
-            text-decoration: underline;
-        }
-
-        /* Fake Newsletter Box */
-        .newsletter-box {
-            background-color: #111;
-            color: #fff;
-        }
-
-        .newsletter-box .sidebar-title {
-            color: #fff;
-            border-bottom-color: #cc0000;
-        }
-
-        .newsletter-box p {
+</body>
+</html>
